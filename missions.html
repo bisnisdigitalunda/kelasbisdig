@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Missions - Pengantar Bisnis Digital UNDA">
+  <title>Digital Missions | Bisnis Digital UNDA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="missions.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">
+    <img src="assets/unda-logo.png" alt="Logo Universitas Darwan Ali" class="brand-logo">
+    <div><strong>PRODI BISNIS DIGITAL</strong><span>UNIVERSITAS DARWAN ALI</span></div>
+  </a>
+  <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a class="active" href="missions.html">Digital Missions</a>
+    <a href="index.html#achievement">Achievement</a>
+    <a href="index.html#passport">Passport</a>
+    <a href="index.html#spotlight">Spotlight</a>
+  </nav>
+</header>
+
+<main>
+  <section class="missions-hero">
+    <div class="missions-hero-inner">
+      <div>
+        <span class="section-kicker">PENGANTAR BISNIS DIGITAL • MISSION CENTER</span>
+        <h1>Your next <span>Digital Mission</span><br>starts here.</h1>
+        <p>Jangan hanya menunggu materi. Keluar, cari, temukan, analisis, dan bawa hasilnya ke kelas.</p>
+      </div>
+      <div class="progress-card">
+        <small>SEMESTER JOURNEY</small>
+        <strong><span id="completedCount">0</span> / <span id="totalCount">10</span> Missions</strong>
+        <div class="mission-progress"><i id="progressBar"></i></div>
+        <span id="progressText">Your journey is just beginning.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission-center">
+    <div class="filter-row">
+      <div>
+        <span class="section-kicker">MISSION BOARD</span>
+        <h2>Choose your challenge.</h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter mission">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="available">Available</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+    </div>
+
+    <div id="missionGrid" class="mission-board"></div>
+  </section>
+
+  <section class="mission-detail-wrap" id="missionDetail">
+    <div class="mission-detail">
+      <button class="close-detail" id="closeDetail">×</button>
+      <div id="detailContent"></div>
+    </div>
+  </section>
+
+  <section class="mission-note">
+    <div class="note-icon">💡</div>
+    <div>
+      <span class="section-kicker">A NOTE FROM YOUR LECTURER</span>
+      <h2>Kalau kalian menemukan sesuatu yang lebih baru daripada materi saya, <span>bawa ke kelas.</span></h2>
+      <p>Dunia bisnis digital berubah cepat. Rasa ingin tahu adalah salah satu skill yang harus kamu bangun.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div><strong>PRODI BISNIS DIGITAL</strong><span>Universitas Darwan Ali</span></div>
+  <p>Business Digital • Innovation • Technology • Entrepreneurship</p>
+  <b>#DigitalBusinessUNDA</b>
+</footer>
+
+<script src="script.js"></script>
+<script src="missions.js"></script>
+</body>
+</html>
